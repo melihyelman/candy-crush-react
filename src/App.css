@@ -1,0 +1,44 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  width: 100%;
+  height: 100%;
+
+}
+.score {
+  display: block;
+  margin-top: 30px;
+  
+}
+.game {
+  margin: 0 auto;
+  width: 560px;
+  height: 560px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game img {
+  width: 70px;
+  height: 70px;
+  transition: 200ms all;
+}
+
+@media screen and (max-device-width: 640px) {
+  .game {
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .game img {
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    transition: 200ms all;
+  }
+}
